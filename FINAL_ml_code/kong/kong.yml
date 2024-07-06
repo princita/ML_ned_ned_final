@@ -1,0 +1,17 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: backend-service
+  url: http://backend:8000
+  routes:
+  - name: backend-route
+    paths:
+    - /
+
+- name: frontend-service
+  url: http://frontend:8501
+  routes:
+  - name: frontend-route
+    paths:
+    - /
